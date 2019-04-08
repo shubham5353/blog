@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get '/article',  to:'article#index'
+
   get '/page', to: 'page#index', as: 'page'
 
   get '/about', to: 'page#about'
